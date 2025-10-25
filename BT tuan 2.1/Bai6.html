@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tổng hợp các bài - Liên kết nội trang</title>
+  <style>
+    html {
+      scroll-behavior: smooth; /* Hiệu ứng cuộn mượt */
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8fbff;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #004aad;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #e8eef9;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #004aad;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-top: 30px;
+      border-radius: 8px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #b22222;
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 6px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #e8eef9;
+      margin-top: 30px;
+    }
+
+    footer a {
+      color: #004aad;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header id="top">
+    <h1>Tổng hợp Bài 3 - Bài 4 - Bài 5</h1>
+  </header>
+
+  <nav>
+    <a href="#bai3">Câu 3</a>
+    <a href="#bai4">Câu 4</a>
+    <a href="#bai5">Câu 5</a>
+
+  </nav>
+
+  <!-- Bài 3 -->
+  <section id="bai3">
+    <h2>Bài 3: Danh sách chuyên ngành đào tạo</h2>
+    <iframe srcdoc='
+      <!DOCTYPE html>
+      <html lang="vi">
+      <head>
+        <meta charset="UTF-8">
+        <style>
+          body {font-family: Arial; background-color:#f0f6ff; color:#222; margin:0; padding:40px;}
+          h1 {text-align:center; color:darkblue; text-transform:uppercase;}
+          h2 {color:#b22222; margin-top:30px;}
+          ul {margin-left:40px; line-height:1.8;}
+          li {font-size:18px;}
+          .section {background-color:#fff; border-radius:10px; padding:20px 30px; box-shadow:0 4px 10px rgba(0,0,0,0.1); max-width:600px; margin:0 auto;}
+        </style>
+      </head>
+      <body>
+        <h1>Danh sách chuyên ngành đào tạo</h1>
+        <div class="section">
+          <h2>Đại học</h2>
+          <ul>
+            <li>Hệ Thống Thông Tin Quản Lý</li>
+            <li>Thương Mại Điện Tử</li>
+            <li>ERP</li>
+          </ul>
+          <h2>Sau đại học</h2>
+          <ul>
+            <li>Thạc sĩ Công Nghệ Thiết Kế Thông Tin & Truyền Thông</li>
+          </ul>
+        </div>
+      </body>
+      </html>
+    '></iframe>
+  </section>
+
+  <!-- Bài 4 -->
+  <section id="bai4">
+    <h2>Bài 4: Các ngành đào tạo (2 ngành)</h2>
+    <iframe srcdoc='
+      <!DOCTYPE html>
+      <html lang="vi">
+      <head>
+        <meta charset="UTF-8">
+        <style>
+          body {font-family: Arial, sans-serif; background-color:#fff; margin:0; padding:20px;}
+          .container {width:350px; margin:0 auto;}
+          .card {background:#fff; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1); margin-bottom:20px; overflow:hidden; transition:transform 0.3s;}
+          .card:hover {transform:translateY(-5px);}
+          .card img {width:100%; height:180px; object-fit:cover;}
+          .card-content {padding:15px;}
+          .card-title {font-size:18px; font-weight:bold; margin:10px 0; color:#222;}
+          .card-text {font-size:14px; color:#555; line-height:1.5; text-align:justify;}
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <div class="card">
+            <img src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/bit-770x385.jpg" alt="Công nghệ phần mềm">
+            <div class="card-content">
+              <div class="card-title">Công nghệ Phần mềm</div>
+              <div class="card-text">
+                Nhu cầu xã hội Cách mạng công nghiệp 4.0 giúp công nghệ thông tin và viễn thông (ICT) xâm nhập...
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/e-commerce-770x385.jpg" alt="Ngành Thương mại điện tử">
+            <div class="card-content">
+              <div class="card-title">Ngành Thương mại điện tử</div>
+              <div class="card-text">
+                Thương mại điện tử (E-Commerce) là ngành học kết hợp giữa kinh tế và công nghệ thông tin...
+              </div>
+            </div>
+          </div>
+        </div>
+      </body>
+      </html>
+    '></iframe>
+  </section>
+
+  <!-- Bài 5 -->
+  <section id="bai5">
+    <h2>Bài 5: Các ngành đào tạo (3 ngành + liên kết)</h2>
+    <iframe srcdoc='
+      <!DOCTYPE html>
+      <html lang="vi">
+      <head>
+        <meta charset="UTF-8">
+        <style>
+          body {font-family:"Segoe UI", Arial; background-color:#fff; margin:0; padding:40px;}
+          .container {display:flex; justify-content:center; flex-wrap:wrap; gap:25px; max-width:1100px; margin:0 auto;}
+          .card {width:320px; background:#fff; border:1px solid #ddd; border-radius:4px; overflow:hidden; text-align:center; transition:transform 0.3s, box-shadow 0.3s;}
+          .card:hover {transform:translateY(-5px); box-shadow:0 4px 10px rgba(0,0,0,0.15);}
+          .card img {width:100%; height:190px; object-fit:cover;}
+          .card-content {padding:15px;}
+          .card-title a {font-size:16px; font-weight:bold; color:#000; text-decoration:none; text-transform:uppercase;}
+          .card-title a:hover {color:#0078d7;}
+          .card-text {font-size:14px; color:#555; margin-top:8px; text-align:justify;}
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <div class="card">
+            <a href="http://bit.ueh.edu.vn/cong-nghe-phan-mem/" target="_blank">
+              <img src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/bit-770x385.jpg" alt="Công nghệ phần mềm">
+            </a>
+            <div class="card-content">
+              <div class="card-title">
+                <a href="http://bit.ueh.edu.vn/cong-nghe-phan-mem/" target="_blank">CÔNG NGHỆ PHẦN MỀM</a>
+              </div>
+              <div class="card-text">Nhu cầu xã hội Cách mạng công nghiệp 4.0 giúp công nghệ thông tin và viễn thông (ICT) xâm nhập...</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="http://bit.ueh.edu.vn/chuyen-nganh-thuong-mai-dien-tu/" target="_blank">
+              <img src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/e-commerce-770x385.jpg" alt="Ngành Thương mại điện tử">
+            </a>
+            <div class="card-content">
+              <div class="card-title">
+                <a href="http://bit.ueh.edu.vn/chuyen-nganh-thuong-mai-dien-tu/" target="_blank">NGÀNH THƯƠNG MẠI ĐIỆN TỬ</a>
+              </div>
+              <div class="card-text">Nhu cầu xã hội Ngành Thương mại điện tử (TMĐT) tại Việt Nam hiện nay đang có những bước tăng...</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="http://bit.ueh.edu.vn/chuyen-nganh-he-thong-thong-tin-kinh-doanh/" target="_blank">
+              <img src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/mis-770x385.jpg" alt="Hệ thống thông tin kinh doanh">
+            </a>
+            <div class="card-content">
+              <div class="card-title">
+                <a href="http://bit.ueh.edu.vn/chuyen-nganh-he-thong-thong-tin-kinh-doanh/" target="_blank">HỆ THỐNG THÔNG TIN KINH DOANH</a>
+              </div>
+              <div class="card-text">Nhu cầu xã hội Hiện nay, ứng dụng công nghệ trong điều hành doanh nghiệp đang được các nhà quản...</div>
+            </div>
+          </div>
+        </div>
+      </body>
+      </html>
+    '></iframe>
+  </section>
+
+  <footer>
+    <a href="#top">Về đầu trang ↑</a>
+  </footer>
+
+</body>
+</html>
